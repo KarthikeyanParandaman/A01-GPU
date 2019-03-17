@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>GPU Information</title>
+</head>
+<body>
+	<h2 align=center><br/> GPU Information and its Features</h2>
+	<br />
+	<br>
+	<form method="post" action="/GPUinfo" align="center">
+			 <b> GPU Name:</b> {{ mygpu.key.id() }}<br><br>
+			 <b> Manufacturer: </b> {{ mygpu.manufacturer }}<br><br>
+			 <b> Date Issued: </b>{{ mygpu.date_issued }}<br><br>
+			 <b> Geometry Shader: </b>{{ mygpu.geometry_shader }}<br><br>
+			 <b> Tesselation Shader </b>{{ mygpu.tesselation_shader }}<br><br>
+			 <b> ShaderInt16: </b>{{ mygpu.shaderInt16 }}<br><br>
+			 <b> Sparse Binding: </b>{{ mygpu.sparse_binding }}<br><br>
+			 <b> Texture CompressionETC2: </b>{{ mygpu.texture_compressionETC2 }}<br><br>
+			 <b> Vertex Pipeline Stores: </b>{{ mygpu.vertex_pipeline_storesandAtomics  }}<br><br>
+
+	</form>
+	<h3 align="center">Click here to update the above information of&nbsp;&nbsp;<a href="/editGPU?name={{ mygpu.key.id() }}">{{ mygpu.key.id() }}</a></h3>
+	<p align="center">
+		<h3 align="center"><a href='/'>Back</a></h3>
+	</p>
+
+</body>
+</html>
